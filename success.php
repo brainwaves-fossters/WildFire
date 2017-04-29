@@ -10,19 +10,11 @@
   </head>
   <body>
     <div class="jumbotron">
-    <h1>Fire Report</h1><br><br>
-    <p>Please enter the details to alert the fire department</p> 
+    <h1>Fire Report</h1><br><br> 
+  </div><br>
+  <div style="background:green;border-radius:15px;padding:10px">
+    <h2 style="color:white"> Successfully sent your location, Fire Department has been Alerted! </h2>
   </div>
-  <form method="post" action="success.php">
-    <div class="form-group">
-      <label><input type="checkbox" value="" style="width:40px; height:40px;float:left;margin-top:15px"><h2 style="float:left;<margin-left:20px></margin-left:10px>">Are you safe?</h2></label>
-      <label for="comment"><h2>Description (Optional)</h2></label>
-      <textarea class="form-control" rows="5" id="comment"></textarea><br>
-      <center>
-      <button type="submit" class="btn btn-danger btn-lg"><h2>Alert Fire Department</h2></button>
-      </center>
-    </div>
-  </form>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
