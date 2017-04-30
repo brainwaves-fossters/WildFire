@@ -15,28 +15,6 @@
         margin: 0;
         padding: 0;
       }
-      #floating-panel {
-        position: absolute;
-        top: 10px;
-        left: 25%;
-        z-index: 5;
-        background-color: #fff;
-        padding: 5px;
-        border: 1px solid #999;
-        text-align: center;
-        font-family: 'Roboto','sans-serif';
-        line-height: 30px;
-        padding-left: 10px;
-      }
-      #floating-panel {
-        background-color: #fff;
-        border: 1px solid #999;
-        left: 25%;
-        padding: 5px;
-        position: absolute;
-        top: 10px;
-        z-index: 5;
-      }
     </style>
   </head>
 
@@ -59,7 +37,7 @@
 
         heatmap = new google.maps.visualization.HeatmapLayer({
           data: getPoints(),
-          radius: 30,
+          radius: 10,
           map: map
         });
       }
@@ -101,12 +79,40 @@
         return [
           new google.maps.LatLng(47.214643, -120.980292),
           new google.maps.LatLng(47.214743, -120.980292),
-          new google.maps.LatLng(47.214843, -120.980292)
+          new google.maps.LatLng(47.214843, -120.980292),
+          new google.maps.LatLng(47.214943, -120.980292),
+          new google.maps.LatLng(47.215043, -120.980292),
+          new google.maps.LatLng(47.215143, -120.980292),
+          new google.maps.LatLng(47.215243, -120.980292),
+          new google.maps.LatLng(47.215343, -120.980292),
+          new google.maps.LatLng(47.215443, -120.980392),
+          new google.maps.LatLng(47.214643, -120.980492),
+          new google.maps.LatLng(47.214743, -120.980592),
+          new google.maps.LatLng(47.214843, -120.980692),
+          new google.maps.LatLng(47.214943, -120.980792),
+          new google.maps.LatLng(47.215043, -120.980892),
+          new google.maps.LatLng(47.215143, -120.980992),
+          new google.maps.LatLng(47.215243, -120.981092),
+          new google.maps.LatLng(47.215343, -120.981192),
+          new google.maps.LatLng(47.215443, -120.981292)
         ];
       }
     </script>
     <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCsl_bii17mtEHhwnvHmFpGydwjR1YY__o&libraries=visualization&callback=initMap">
+    </script>
+
+    <script>
+        function calculateCoordinates(stringValue) {
+            var coordinates;
+            for(var i = 0; i < 10; i ++) {
+                for( var j = 0; j < 10; j ++) {
+                    var k = 0;
+                    k = 10*i + j;
+
+                }
+            }
+        }
     </script>
   </body>
 </html>

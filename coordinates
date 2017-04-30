@@ -1,0 +1,5 @@
+new google.maps.LatLng(47.213543, -120.981992), // bottom left
+          new google.maps.LatLng(47.215943, -120.981992),  //top left
+          
+          new google.maps.LatLng(47.213543, -120.978592), // bottom right
+          new google.maps.LatLng(47.215943, -120.978592)  //top right 

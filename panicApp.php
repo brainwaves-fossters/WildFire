@@ -10,16 +10,18 @@
   </head>
   <body>
     <div class="jumbotron">
-    <h1>Fire Report</h1><br><br>
+    <h1>Fire Report</h1><br>
     <p>Please enter the details to alert the fire department</p> 
   </div>
   <form method="post" action="success.php">
     <div class="form-group">
-      <label><input type="checkbox" value="" style="width:40px; height:40px;float:left;margin-top:15px"><h2 style="float:left;<margin-left:20px></margin-left:10px>">Are you safe?</h2></label>
-      <label for="comment"><h2>Description (Optional)</h2></label>
+    <label><h3 style="float:left;<margin-left:20px></margin-left:10px>">Are you safe?</h3>
+      <input type="radio" value="" name="abc" style="width:30px; height:30px;float:left;margin-top:15px;margin-left:20px"><h3 style="float:left;<margin-left:20px></margin-left:10px>">Yes</h3>
+      <input type="radio" value="" name="abc" style="width:30px; height:30px;float:left;margin-top:15px;margin-left:20px"><h3 style="float:left;<margin-left:20px></margin-left:10px>">No</h3></label>
+      <label for="comment"><h3>Description (Optional)</h3></label>
       <textarea class="form-control" rows="5" id="comment"></textarea><br>
       <center>
-      <button type="submit" class="btn btn-danger btn-lg"><h2>Alert Fire Department</h2></button>
+      <button type="submit" class="btn btn-danger btn-lg"><h3>Alert Fire Department</h3></button>
       </center>
     </div>
   </form>
